@@ -6,7 +6,8 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #0d0d0f;
+    color: #e8e8ea;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,39 +19,50 @@ body {
     display: flex;
     flex-direction: row;
     gap: 24px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 .card {
-    background-color: #f2f1ed;
+    display: flex;
+    flex-direction: column;
+    background:
+        radial-gradient(ellipse 90% 60% at 10% 0%, rgba(245, 197, 24, 0.22) 0%, transparent 55%),
+        radial-gradient(ellipse 70% 50% at 95% 100%, rgba(124, 92, 255, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(56, 189, 248, 0.06) 0%, transparent 70%),
+        linear-gradient(145deg, #14141c 0%, #2a2540 38%, #1e1c2e 72%, #101018 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 12px;
     padding: 40px 32px;
     width: 320px;
     flex-shrink: 0;
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
 .card-title {
     font-size: 32px;
     font-weight: 600;
-    color: #333;
+    color: #f5f5f7;
     margin-bottom: 8px;
 }
 
 .card-price {
     font-size: 20px;
-    color: #666;
+    color: #9a9aa3;
     margin-bottom: 24px;
 }
 
 .card-content {
+    flex: 1;
     margin-bottom: 32px;
 }
 
 .includes-text {
     font-size: 16px;
-    color: #333;
+    color: #c8c8d0;
     margin-bottom: 16px;
 }
 
@@ -64,11 +76,11 @@ body {
     align-items: center;
     margin-bottom: 12px;
     font-size: 15px;
-    color: #333;
+    color: #d4d4dc;
 }
 
 .checkmark {
-    color: #4a4a4a;
+    color: #f5c518;
     font-size: 18px;
     margin-right: 12px;
     font-weight: bold;
@@ -76,21 +88,23 @@ body {
 
 .download-button {
     width: fit-content;
-    background-color: #e6e5e0;
+    margin-top: auto;
+    background-color: #f5c518;
     border: none;
     border-radius: 999px;
     padding: 14px 24px;
     font-size: 16px;
-    font-weight: 500;
-    color: #333;
+    font-weight: 600;
+    color: #1a1a14;
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease, transform 0.15s ease;
 }
 
 .download-button:hover {
-    background-color: #D8D6CE;
+    background-color: #ffda33;
 }
 
 .download-button:active {
-    background-color: #D8D6CE;
+    background-color: #e0ad10;
+    transform: scale(0.98);
 }
