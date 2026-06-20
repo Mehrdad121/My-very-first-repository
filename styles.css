@@ -53,6 +53,18 @@ body {
     font-size: 20px;
     color: #9a9aa3;
     margin-bottom: 24px;
+    display:inline-flex;
+    align-items:baseline;
+}
+
+.card-price-amount {
+    font-size: 32px;
+    font-weight: 600;
+    color: #f5c518;
+}
+
+.card-price-per-user {
+    font-size: 16px;
 }
 
 .card-content {
